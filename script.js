@@ -17,8 +17,8 @@ first.onmousemove = function() {
 };
 let fst = document.querySelector("first");
 
-first.addEventListener("click", function() {
-  console.log("firstElement");
+first.addEventListener("click", function(event) {
+  console.log(this, event.target);
 });
 
 let b = 0;
@@ -40,8 +40,8 @@ second.onmousemove = function() {
 };
 let scd = document.querySelector("second");
 
-second.addEventListener("click", function() {
-  console.log("secondElement");
+second.addEventListener("click", function(event) {
+  console.log(this, event.target);
 });
 
 let c = 0;
@@ -63,6 +63,6 @@ third.onmousemove = function() {
 };
 let thd = document.querySelector("third");
 
-third.addEventListener("click", function() {
-  console.log("thirdElement");
+third.addEventListener("click", function(event) {
+  console.log(this, event.target);
 });
